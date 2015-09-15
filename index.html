@@ -10,17 +10,19 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slippry.css">
-	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
 	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	
+	<!-- Resource jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/preloadjs-0.6.1.min.js"></script>
 	<script src="js/Modernizr.js"></script> <!-- Modernizr -->
 	<script src="js/slippry.js"></script><!-- slideshow -->
 	<script src="js/typed.js"></script><!-- type ani -->
-	
-	
+	<script src="js/scrollReveal.js"></script>
+	<script src="js/jquery.blueimp-gallery.min.js"></script>
+	<script src="js/bootstrap-image-gallery.min.js"></script>
 	<script>
 	$(function(){
 		$(".element").typed({
@@ -35,25 +37,26 @@
 	
 </head>
 <body>
-<div class="sy-box">
-	<div class="sy-slides-wrap">
-		<div class="sy-slides-crop">
-		
-			<ul class="hde sy-list" id="slider" style="list-style: none; width: 100%; height: 100%; padding: 0; margin: 0;">
-				<li class="sy-slide kenburns useCSS transition sy-ken sy-active" style="opacity: 1; transition-duration: 5000ms; animation-duration: 19000ms;">
-					<img src="img/slide-3.jpg"></li>
-				<li class="sy-slide kenburns useCSS" style="opacity: 0; transition-duration: 5000ms; animation-duration: 19000ms;">
-					<img src="img/slide-1.jpg"></li>
-				<li class="sy-slide kenburns useCSS  sy-ken transition " style="opacity: 0; transition-duration: 5000ms; animation-duration: 19000ms;">
-					<img src="img/slide-2.jpg"></li>
-			</ul>
+
+	<!-- Slippry Slider -->
+	<div class="sy-box">
+		<div class="sy-slides-wrap">
+			<div class="sy-slides-crop">
+				<ul class="hde sy-list" id="slider" style="list-style: none; width: 100%; height: 100%; padding: 0; margin: 0;">
+					<li class="sy-slide kenburns useCSS transition sy-ken sy-active" style="opacity: 1; transition-duration: 5000ms; animation-duration: 19000ms;">
+						<img src="img/slide-3.jpg"></li>
+					<li class="sy-slide kenburns useCSS" style="opacity: 0; transition-duration: 5000ms; animation-duration: 19000ms;">
+						<img src="img/slide-1.jpg"></li>
+					<li class="sy-slide kenburns useCSS  sy-ken transition " style="opacity: 0; transition-duration: 5000ms; animation-duration: 19000ms;">
+						<img src="img/slide-2.jpg"></li>
+				</ul>
+			</div>
+			<div class="sy-caption-wrap">
+				<div class="sy-caption" style="display: none;"></div>
+			</div>
+			<div class="sy-filler ready" style="padding-top: 66.68%;"></div>
 		</div>
-		<div class="sy-caption-wrap">
-			<div class="sy-caption" style="display: none;"></div>
-		</div>
-		<div class="sy-filler ready" style="padding-top: 66.68%;"></div>
-	</div>
-</div>	
+	</div>	
 	
 	<script>
 	$(function(){
@@ -69,79 +72,47 @@
 		});
 	});
 	</script>
-	<!--header panel-->
 	
-	<!--bar loader-->
-	
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#technical">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#call">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
+	<!-- Header -->
 	<div class="container-fluid prx-b" id="header">
-		<div class="col-sm-12 z1">
-			<div class="navbar navbar-inverse navbar-static-top">
-				<div class="container">
-					<a href="index.html" class="navbar-brand"><img src="img/logo.png"></a>
-					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					
-					<div class="collapse navbar-collapse navHeaderCollapse">
-						<ul class="nav navbar-nav navbar-left">
-							<li><a href="#body">About</a></li>
-							<li><a href="#technical">Skills</a></li>
-							<li><a href="#scroll">Work</a></li>
-							<li><a href="#call">Contact</a></li>
-						</ul>
-					</div>	
-				</div>
-				<div class="social no-space z1">
-					<ul class="hde-social">
-						<li><a href="https://instagram.com/tri_marwanti" target="_blank"><span class="socicon">x</span></a></li>
-						<li><a href="https://id.linkedin.com/pub/tri-marwanti/74/419/867" target="_blank"><span class="socicon">j</span></a></li>
-						<li><a href="https://id-id.facebook.com/public/Tri-Marwanti" target="_blank"><span class="socicon">b</span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-				
-		<!--<div class="col-sm-4 z1">
-			<a href="index.html"><img src="img/logo-tm.png" alt="logo TM"></a>
-		</div>-->
-		<!--<div class="row">
-			<div class="col-sm-4">
-				<a href="#cd-nav" class="cd-nav-trigger"> Menu
-					<span class="cd-nav-icon"></span>
-					<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
-						<circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157,157" stroke-dashoffset="157"></circle>
-					</svg>
-				</a>
-				
-				<div id="cd-nav" class="cd-nav index bgcover">
-					<div class="cd-navigation-wrapper bg-xs">
-						<div class="cd-half-block">
-							<h2><img src="img/sep.gif" alt="separator"><br>Menu</h2>
-							<nav>
-								<ul class="cd-primary-nav">
-									<li><a href="index.html" class="selected">Home</a></li>
-									<li><a href="works.html">Works</a><span><a href="web.html">Web</a>&nbsp;/&nbsp; <a href="graphics.html">Graphics</a></span></li>
-									<li><a href="about.html">About</a></li>
-								</ul>
-							</nav>
-						</div> <!-- .cd-half-block -->
-						<!--<div class="cd-half-block">
-							<address>
-								<ul class="cd-contact-info">
-									<li><a href="mailto:t.marwanti@gmail.com">t.marwanti@gmail.com</a></li>
-									<li>+6287762631754</li>
-									<li><span>Indonesia</span></li>
-								</ul>
-							</address>
-						</div> <!-- .cd-half-block -->
-					<!--</div> <!-- .cd-navigation-wrapper -->
-				<!--</div> <!-- .cd-nav -->
-			<!--</div>
-		</div>-->
-		
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="caption">
@@ -155,105 +126,109 @@
 				</div>
 			</div>
 		</div>
-		
 	</div>
-	<div class="container-fluid zpb" data-sr="enter top over 1s">
-		<div class="row">
-			<div class="col-sm-12 p-bottom" id="body">
-				<p data-sr="enter bottom over 0.6s" class="text-center"><img src="img/profile.png" class="profile" alt="profile"></p>
-					
-				<h1 class="text-center">About Me</h1>
-				<p class="wrap text-center">Hello, I'm Tri, a designer and front-end developer specializing in web and graphics design. I was born in 1992, and graduated from Informatics Management in Bina Sarana Informatika with GPA 3.84 in 2015. I was learned and interested to building graphic design when I was in high schooll. </p>
+	
+	<!-- About Section -->
+	<section id="about">
+		<div class="container-fluid zpb" data-sr="enter top over 1s">
+			<div class="row">
+				<div class="col-sm-12 p-bottom">
+					<p data-sr="enter bottom over 1.6s" class="text-center"><img src="img/profile.png" class="profile" alt="profile"></p>
+					<h1 class="text-center">About Me</h1>
+					<p class="wrap text-center">Hello, I'm Tri, a designer and front-end developer specializing in web and graphics design. I was born in 1992, and graduated from Informatics Management in Bina Sarana Informatika with GPA 3.84 in 2015. I was learned and interested to building graphic design when I was in high schooll. </p>
+				</div>	
 			</div>
-				
-		</div>
-		<div class="row">
-			<div class="col-sm-12" id="abroad">
-				<h1>Works</h1>
-				<p class="wrap">I've been working in medical device company for more than 3 years as a Graphic Designer. <br>Create brochures, catalog, calendar and stationaries is my job.</p>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid zp">
-		<div class="row" data-sr="enter top over 1s">
-			<div class="col-sm-6 no-space">
-				<div class="grid">
-					<a href="img/logo-graphics.jpg" class="thumb active" title="image" target="_blank">
-						<img src="img/logo-graphics.jpg" alt="logo-graphics">
-						<div class="text-overlay">
-							<!--<h1 class="text-center">1280x900</h1>-->
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="col-sm-6 no-space">
-				<div id="slider">
-					<figure id="scroll">
-						<a href="img/graphic.jpg" title="Graphic" target="_blank"><img src="img/graphic.jpg" alt="Confessions of A Graphic Designer"></a>
-						<a href="img/brosur2.jpg" title="Pathology Brochure" target="_blank"><img src="img/brosur2.jpg" alt="brosur2"></a>
-						<a href="img/brosur3.jpg" title="Forensic Brochure" target="_blank"><img src="img/brosur3.jpg" alt="brosur3"></a>
-						<a href="img/wedding-card.jpg" title="Wedding Card" target="_blank"><img src="img/wedding-card.jpg" alt="wedding-card"></a>
-						<a href="img/wedding-card2.jpg" title="Wedding Card" target="_blank"><img src="img/wedding-card2.jpg" alt="wedding-card2"></a>
-					</figure>
+			<div class="row">
+				<div class="col-sm-12" id="work">
+					<h1>Works</h1>
+					<p class="wrap">I've been working in medical device company for more than 3 years as a Graphic Designer. <br>Create brochures, catalog, calendar and stationaries is my job.</p>
 				</div>
 			</div>
 		</div>
-		<div class="row" data-sr="enter top over 1s">
-			<div class="col-sm-12 n-mar-tb">
-				<div class="row">
-					<div class="col-sm-8">
-						<div class="row">
-							<div class="col-sm-6 no-space">
-								<div class="grid">
-									<a href="img/photo-wisuda.jpg" class="thumb active" title="Wisuda" target="_blank">
-										<img src="img/photo-wisuda.jpg" alt="photo wisuda">
-										<div class="text-overlay">
-											<!-- <h1 class="text-center">1280x674</h1>-->
-										</div>
-									</a>
-								</div>
+	</section>
+	
+	<!-- Portfolio Section -->
+	<section id="portfolio">
+		<div class="container-fluid zp">
+			<div class="row" data-sr="enter top over 1s">
+				<div class="col-sm-6 no-space">
+					<div class="grid">
+						<a href="img/logo-graphics.jpg" class="thumb active" title="image" target="_blank">
+							<img src="img/logo-graphics.jpg" alt="logo-graphics">
+							<div class="text-overlay">
+								<!--<h1 class="text-center">1280x900</h1>-->
 							</div>
-							
-							<div class="col-sm-6 no-space">
-								<div class="grid bggreen">
-									<div id="caption" data-sr="enter left over 0.6s"><img src="img/sep.gif" alt="separator"><!--<a href="web.html"><img src="img/arrow.png" class="arrow" alt="arrow"></a>--><h1>Graphic</h1><span><p>Worked on graphic materials including brochures, banners, catalog, calendar and stationaries.</p></span></div>
-									<img src="img/spacer.png" alt="spacer" class="img-responsive">
-								</div>
-							</div>
-						</div>
-						
-						<div class="row">
-							<div class="col-sm-12 no-space">
-								<div class="grid">
-									<a href="img/calendar.jpg" class="thumb active" title="calendar" target="_blank">
-										<img src="img/calendar.jpg" alt="calendar">
-										<div class="text-overlay">
-											<!-- <h1 class="text-center">1280x338</h1>-->
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
+						</a>
 					</div>
-					
-					<div class="col-sm-4 no-space">
-						<div class="grid">
-							<a href="img/graphics.jpg" class="thumb active" title="graphics" target="_blank">
-								<img src="img/graphics.jpg" alt="graphics">
-								<div class="text-overlay">
-									<!-- <h1 class="text-center">638x673</h1>-->
-								</div>
-							</a>
-						</div>
+				</div>
+				<div class="col-sm-6 no-space">
+					<div id="slider">
+						<figure id="scroll">
+							<a href="img/graphic.jpg" title="Graphic" target="_blank"><img src="img/graphic.jpg" alt="Confessions of A Graphic Designer"></a>
+							<a href="img/brosur2.jpg" title="Pathology Brochure" target="_blank"><img src="img/brosur2.jpg" alt="brosur2"></a>
+							<a href="img/brosur3.jpg" title="Forensic Brochure" target="_blank"><img src="img/brosur3.jpg" alt="brosur3"></a>
+							<a href="img/wedding-card.jpg" title="Wedding Card" target="_blank"><img src="img/wedding-card.jpg" alt="wedding-card"></a>
+							<a href="img/wedding-card2.jpg" title="Wedding Card" target="_blank"><img src="img/wedding-card2.jpg" alt="wedding-card2"></a>
+						</figure>
 					</div>
 				</div>
 			</div>
+			<div class="row" data-sr="enter top over 1s">
+				<div class="col-sm-12 n-mar-tb">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="row">
+								<div class="col-sm-6 no-space">
+									<div class="grid">
+										<a href="img/photo-wisuda.jpg" class="thumb active" title="Wisuda" target="_blank">
+											<img src="img/photo-wisuda.jpg" alt="photo wisuda">
+											<div class="text-overlay">
+												<!-- <h1 class="text-center">1280x674</h1>-->
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-6 no-space">
+									<div class="grid bggreen">
+										<div id="caption" data-sr="enter left over 1.6s"><img src="img/sep.gif" alt="separator">
+											<h1>Graphic</h1><span><p>Worked on graphic materials including brochures, banners, catalog, calendar and stationaries.</p></span>
+										</div>
+										<img src="img/spacer.png" alt="spacer" class="img-responsive">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 no-space">
+									<div class="grid">
+										<a href="img/calendar.jpg" class="thumb active" title="calendar" target="_blank">
+											<img src="img/calendar.jpg" alt="calendar">
+											<div class="text-overlay">
+												<!-- <h1 class="text-center">1280x338</h1>-->
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 no-space">
+							<div class="grid">
+								<a href="img/graphics.jpg" class="thumb active" title="graphics" target="_blank">
+									<img src="img/graphics.jpg" alt="graphics">
+									<div class="text-overlay">
+										<!-- <h1 class="text-center">638x673</h1>-->
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			
 			<div class="row" data-sr="enter top over 1s">
 				<div class="col-sm-4 no-space">
 					<div class="grid bgblue">
-						<div id="caption" data-sr="enter left over 0.6s"><img src="img/sep.gif" alt="separator"><!--<a href="web.html"><img src="img/arrow.png" class="arrow" alt="arrow"></a>--><h1>Code</h1><span><p>Some of my projects are handcoded with HTML5, CSS3, Bootstrap, Jquery and basic PHP.</p></span></div>
+						<div id="caption" data-sr="enter left over 1.6s"><img src="img/sep.gif" alt="separator">
+							<h1>Code</h1><span><p>Some of my projects are handcoded with HTML5, CSS3, Bootstrap, Jquery and basic PHP.</p></span>
+						</div>
 						<img src="img/spacer2.png" alt="spacer" class="img-responsive">
 					</div>
 				</div>
@@ -269,12 +244,13 @@
 				</div>
 				<div class="col-sm-4 no-space">
 					<div class="grid bggray">
-						<div id="caption" data-sr="enter left over 0.6s"><img src="img/sep.gif" alt="separator"><!--<a href="graphics.html"><img src="img/arrow.png" class="arrow" alt="arrow"></a>--><h1>Web</h1><span><p>Focused on digital marketing (Website, SEO, Social Media, and E-commerce).</p></span></div>
+						<div id="caption" data-sr="enter left over 1.6s"><img src="img/sep.gif" alt="separator">
+							<h1>Web</h1><span><p>Focused on digital marketing (Website, SEO, Social Media, and E-commerce).</p></span>
+						</div>
 						<img src="img/spacer2.png" alt="spacer" class="img-responsive">
 					</div>
 				</div>
 			</div>
-			
 			<div class="row" data-sr="enter top over 1s">
 				<div class="col-sm-6 no-space">
 					<div class="grid">
@@ -299,90 +275,88 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="container-fluid" id="technical" data-sr="enter top over 1s">
+	</section>
+	
+	<!-- Skills Section -->
+	<section id="technical">
+		<div class="container-fluid" data-sr="enter top over 1s">
 			<div class="row">
-				<div class="col-sm-3" data-sr="enter bottom over 0.2s"><h1>Skills</h1></div>
-				<div class="col-sm-2" data-sr="enter bottom over 0.4s"><img src="img/ico-web.png" alt="ico web"><span>Web</span></div>
-				<div class="col-sm-2" data-sr="enter bottom over 0.6s"><img src="img/ico-graphics.png" alt="ico graphics"><span>Graphics</span></div>
-				<div class="col-sm-2" data-sr="enter bottom over 0.8s"><img src="img/ico-social.png" alt="ico social"><span>Social</span></div>
-				<div class="col-sm-2" data-sr="enter bottom over 1s"><img src="img/ico-photo.png" alt="ico photo"><span>Photo</span></div>
+				<div class="col-sm-3" data-sr="enter bottom over 0.4s"><h1>Skills</h1></div>
+				<div class="col-sm-2" data-sr="enter bottom over 0.6s"><img src="img/ico-web.png" alt="ico web"><span>Web</span></div>
+				<div class="col-sm-2" data-sr="enter bottom over 0.8s"><img src="img/ico-graphics.png" alt="ico graphics"><span>Graphics</span></div>
+				<div class="col-sm-2" data-sr="enter bottom over 1s"><img src="img/ico-social.png" alt="ico social"><span>Social</span></div>
+				<div class="col-sm-2" data-sr="enter bottom over 1.2s"><img src="img/ico-photo.png" alt="ico photo"><span>Photo</span></div>
 			</div>
 		</div>
+	</section>
 		
-		
-		
-		<div class="container-fluid zp">
-			<div class="row" data-sr="enter top over 1s">
-				<div class="col-sm-12" id="call"><h1 data-sr="enter top over 1s"><span>FEEL FREE TO CONTACT ME !</span><a href="mailto:t.marwanti@gmail.com" class="ghost-button">Say Hello</a></h1></div>
-			</div>
-			<div class="row zp" id="footer">
-				<div class="col-md-6 pad"><p>2015 © Tri Marwanti || Personal Site</p></div>
-				<div class="col-md-6 pad socialbot">
-					<ul>
-						<li><a href="https://instagram.com/tri_marwanti" target="_blank"><img src="img/ico-insta.png"></a></li>
-						<li><a href="https://id.linkedin.com/pub/tri-marwanti/74/419/867" target="_blank"><img src="img/ico-in.png"></a></li>
-						<li><a href="https://id-id.facebook.com/public/Tri-Marwanti" target="_blank"><img src="img/ico-fb.png"></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12" id="disclaimer"><p class="wrap">THIS IS A PERSONAL ONLINE PORTFOLIO, VISUAL PLAYGROUND AND TESTING GROUND OF TRI MARWANTI. </p></div>
+	<!-- Footer -->
+	<div class="container-fluid zp">
+		<div class="row" data-sr="enter top over 1s">
+			<div class="col-sm-12" id="call"><h1 data-sr="enter top over 1s"><span>FEEL FREE TO CONTACT ME !</span><a href="mailto:t.marwanti@gmail.com" class="ghost-button">Say Hello</a></h1></div>
+		</div>
+		<div class="row zp" id="footer">
+			<div class="col-md-6"><p>2015 &copy; Tri Marwanti || Personal Site</p></div>
+			<div class="col-md-6">
+				<ul class="list-inline social-buttons">
+					<li><a href="https://instagram.com/tri_marwanti" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://id.linkedin.com/pub/tri-marwanti/74/419/867" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://id-id.facebook.com/public/Tri-Marwanti" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				</ul>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-sm-12" id="disclaimer"><p class="wrap">THIS IS A PERSONAL ONLINE PORTFOLIO, VISUAL PLAYGROUND AND TESTING GROUND OF TRI MARWANTI. </p></div>
+		</div>
+	</div>
 		
-		<p id="back-top"><a href="#top"><span></span></a></p>
+	<p id="back-top"><a href="#top"><span></span></a></p>
 		
-		<div id="blueimp-gallery" class="blueimp-gallery" style="display:none;">
-    		<!-- The container for the modal slides -->
+	<!-- Lightbox Gallery -->
+	<div id="blueimp-gallery" class="blueimp-gallery" style="display:none;">
+    	<!-- The container for the modal slides -->
    		<div class="slides" style="width: 136600px;"></div>
 		<!-- Controls for the borderless lightbox -->
-			<h3 class="title"></h3>
-			<a class="prev">‹</a>
-			<a class="next">›</a>
-			<a class="close">×</a>
-			<a class="play-pause"></a>
-			<ol class="indicator"></ol>
-			<!-- The modal dialog, which will be used to wrap the lightbox content -->
-			<div class="modal fade">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" aria-hidden="true">&times;</button>
-							<h4 class="modal-title"></h4>
-						</div>
-						<div class="modal-body next"></div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-primary pull-left prev">
-								<i class="glyphicon glyphicon-chevron-left"></i>
-								Previous
-							</button>
-							<button type="button" class="btn btn-primary next">
-								Next
-								<i class="glyphicon glyphicon-chevron-right"></i>
-							</button>
-						</div>
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+		<!-- The modal dialog, which will be used to wrap the lightbox content -->
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body next"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary pull-left prev">
+							<i class="glyphicon glyphicon-chevron-left"></i>
+							Previous
+						</button>
+						<button type="button" class="btn btn-primary next">
+							Next
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Resource jQuery -->
-		<script src="js/main.js"></script>
-		<script src="js/scrollReveal.js"></script>
-		<script src="js/parallax.js" defer></script>
-		<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-		<script src="js/bootstrap-image-gallery.min.js"></script>
+	</div>
 		
-		<script type="text/javascript">
-			(function($){
-				'use strict';
-				window.sr= new scrollReveal({
-					reset: false,
-					move: '50px',
-					mobile: false
-				});
-			})();
-		</script>		
-					
+	<script type="text/javascript">
+		(function($){
+			'use strict';
+			window.sr= new scrollReveal({
+				reset: false,
+				move: '50px',
+				mobile: false
+			});
+		})();
+	</script>	
+	
 </body>
 </html>
