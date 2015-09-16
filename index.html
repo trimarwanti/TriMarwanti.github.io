@@ -84,7 +84,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png"></a>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/logo.png"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -95,11 +95,11 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+					<li>
+                        <a class="page-scroll" href="#work">Skills</a>
                     </li>
 					<li>
-                        <a class="page-scroll" href="#technical">Skills</a>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#call">Contact</a>
@@ -147,6 +147,19 @@
 		</div>
 	</section>
 	
+	<!-- Skills Section -->
+	<section id="technical">
+		<div class="container-fluid" data-sr="enter top over 1s">
+			<div class="row">
+				<div class="col-sm-3" data-sr="enter bottom over 0.4s"><h1>Skills</h1></div>
+				<div class="col-sm-2" data-sr="enter bottom over 0.6s"><i class="fa fa-desktop fa-3x"></i><span>Web</span></div>
+				<div class="col-sm-2" data-sr="enter bottom over 0.8s"><i class="fa fa-code fa-3x"></i><span>Code</span></div>
+				<div class="col-sm-2" data-sr="enter bottom over 1s"><i class="fa fa-pencil-square-o fa-3x"></i><span>Graphic</span></div>
+				<div class="col-sm-2" data-sr="enter bottom over 1.2s"><i class="fa fa-share-alt fa-3x"></i><span>Social</span></div>
+			</div>
+		</div>
+	</section>
+	
 	<!-- Portfolio Section -->
 	<section id="portfolio">
 		<div class="container-fluid zp">
@@ -180,8 +193,8 @@
 							<div class="row">
 								<div class="col-sm-6 no-space">
 									<div class="grid">
-										<a href="img/photo-wisuda.jpg" class="thumb active" title="Wisuda" target="_blank">
-											<img src="img/photo-wisuda.jpg" alt="photo wisuda">
+										<a href="img/mug.jpg" class="thumb active" title="Mug" target="_blank">
+											<img src="img/mug.jpg" alt="Mug">
 											<div class="text-overlay">
 												<!-- <h1 class="text-center">1280x674</h1>-->
 											</div>
@@ -189,7 +202,7 @@
 									</div>
 								</div>
 								<div class="col-sm-6 no-space">
-									<div class="grid bggreen">
+									<div class="grid bgtosca">
 										<div id="caption" data-sr="enter left over 1.6s"><img src="img/sep.gif" alt="separator">
 											<h1>Graphic</h1><span><p>Worked on graphic materials including brochures, banners, catalog, calendar and stationaries.</p></span>
 										</div>
@@ -225,7 +238,7 @@
 			</div>
 			<div class="row" data-sr="enter top over 1s">
 				<div class="col-sm-4 no-space">
-					<div class="grid bgblue">
+					<div class="grid bgorange">
 						<div id="caption" data-sr="enter left over 1.6s"><img src="img/sep.gif" alt="separator">
 							<h1>Code</h1><span><p>Some of my projects are handcoded with HTML5, CSS3, Bootstrap, Jquery and basic PHP.</p></span>
 						</div>
@@ -234,8 +247,8 @@
 				</div>
 				<div class="col-sm-4 no-space">
 					<div class="grid">
-						<a href="img/mug.jpg" class="thumb active" title="Mug" target="_blank">
-							<img src="img/mug.jpg" alt="mug">
+						<a href="img/dslrcom.jpg" class="thumb active" title="digitalslr.com site" target="_blank">
+							<img src="img/dslrcom.jpg" alt="digitalslr.com site">
 							<div class="text-overlay">
 								<!-- <h1 class="text-center">1280x900</h1>-->
 							</div>
@@ -273,19 +286,6 @@
 						</figure>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!-- Skills Section -->
-	<section id="technical">
-		<div class="container-fluid" data-sr="enter top over 1s">
-			<div class="row">
-				<div class="col-sm-3" data-sr="enter bottom over 0.4s"><h1>Skills</h1></div>
-				<div class="col-sm-2" data-sr="enter bottom over 0.6s"><img src="img/ico-web.png" alt="ico web"><span>Web</span></div>
-				<div class="col-sm-2" data-sr="enter bottom over 0.8s"><img src="img/ico-graphics.png" alt="ico graphics"><span>Graphics</span></div>
-				<div class="col-sm-2" data-sr="enter bottom over 1s"><img src="img/ico-social.png" alt="ico social"><span>Social</span></div>
-				<div class="col-sm-2" data-sr="enter bottom over 1.2s"><img src="img/ico-photo.png" alt="ico photo"><span>Photo</span></div>
 			</div>
 		</div>
 	</section>
@@ -346,7 +346,29 @@
 			</div>
 		</div>
 	</div>
-		
+	
+	<script src="js/jquery.easing-1.3.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+	
+	<script type="text/javascript">
+	$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+	});
+	</script>
+	
+	<script type="text/javascript">
+	$('body').scrollspy({
+		target: '.navbar-fixed-top'
+	});
+	</script>
+	
 	<script type="text/javascript">
 		(function($){
 			'use strict';
