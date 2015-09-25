@@ -46,12 +46,12 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
 	#header .caption h1, #header .caption-sub h1 {font-size: 78px !important} 
 	#header .caption span, #header .caption-sub span {font-size: 30px; } 
 	
-	#caption h1 { font-size: 2em; } #caption span { font-size: 20px; }
+	#caption h1 { font-size: 2em; } #caption span { font-size: 22px; }
 	.prx-b, .prx-t, .prx-l, .prx-r { position:static!important; }
 	
 }
 @media only screen and (max-width: 1280px) {
-	#header .caption h1, #header .caption-sub h1 { font-size: 68px !important;} #header .caption span, #header .caption-sub span { font-size: 24px!important; } 
+	#header .caption h1, #header .caption-sub h1 { font-size: 68px !important;} #header .caption span, #header .caption-sub span { font-size: 22px!important; } 
     #mice { padding-top: 3em !important;}
 	#header, #technical { background: url(../img/slide-2.jpg) top center no-repeat!important; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; min-height: auto!important;  }
 	.wrap { width: inherit !important; } .card-m { padding: 2em!important;}
@@ -62,7 +62,7 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
 	
 }
 @media only screen and (max-width: 800px) {
-	#caption h1 { font-size: 1.8em; margin-bottom: 0em; margin-top: 0em;} #caption span { font-size: 12px; } 
+	#caption h1 { font-size: 1.8em; margin-bottom: 0em; margin-top: 0em;} #caption span { font-size: 22px; } 
 	#header { min-height: auto!important; }  #header .caption { padding-top: 11%!important; } .m-button { margin-top: 4em!important; }
 	#header .caption span, #header .caption-sub span {font-size: 20px; } 
 	#body { text-align: justify !important; } #body h1 { text-align: center!important; }
