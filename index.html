@@ -1,384 +1,344 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tri Marwanti || Personal Site</title>
-	<meta name="description" content="Tri Marwanti Personal Site is a personal online portfolio and visual playground of Tri Marwanti. Most of the showcased work are web and graphics.">
-	<meta name="keywords" content="Web Design, Graphic Design, Indonesia, Social Media, Portfolio">
-	
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/slippry.css">
-	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
-	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	 <link rel="shortcut icon" href="img/favicon.png">
-	
-	<!-- Resource jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/Modernizr.js"></script> <!-- Modernizr -->
-	<script src="js/slippry.js"></script><!-- slideshow -->
-	<script src="js/typed.js"></script><!-- type ani -->
-	<script src="js/scrollReveal.js"></script>
-	<script src="js/jquery.blueimp-gallery.min.js"></script>
-	<script src="js/bootstrap-image-gallery.min.js"></script>
-	<script>
-	$(function(){
-		$(".element").typed({
-			strings: ["Graphic / Web Designer"],
-			typeSpeed: 70,
-			showCursor: false,
-		});
-	});
-	</script>
-	
-	<style> [data-sr] { visibility: hidden; } </style>
-	
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.png">
 
-	<!-- Slippry Slider -->
-	<div class="sy-box">
-		<div class="sy-slides-wrap">
-			<div class="sy-slides-crop">
-				<ul class="hde sy-list" id="slider" style="list-style: none; width: 100%; height: 100%; padding: 0; margin: 0;">
-						<img src="img/slide-3.jpg"></li>
-					<li class="sy-slide kenburns useCSS" style="opacity: 0; transition-duration: 5000ms; animation-duration: 19000ms;">
-						<img src="img/slide-1.jpg"></li>
-					<li class="sy-slide kenburns useCSS  sy-ken transition " style="opacity: 0; transition-duration: 5000ms; animation-duration: 19000ms;">
-						<img src="img/slide-2.jpg"></li>
-				</ul>
-			</div>
-			<div class="sy-caption-wrap">
-				<div class="sy-caption" style="display: none;"></div>
-			</div>
-			<div class="sy-filler ready" style="padding-top: 66.68%;"></div>
-		</div>
-	</div>	
-	
-	<script>
-	$(function(){
-		var demo1 = $("#slider").slippry({
-			transition: 'kenburns',
-			useCSS: true,
-			speed: 5000,
-			pause: 9000,
-			auto: true,
-			controls: false,
-			preload: 'visible',
-			autoHover: false
-		});
-	});
-	</script>
-	
-	<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html"><img src="img/logo.png"></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden active">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-					<li>
-                        <a class="page-scroll" href="#work">Skills</a>
-                    </li>
-					<li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#call">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <title>Tri Marwanti | Web Designer</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Resources -->
+    <link href="fonts/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 10]>
+      <style>.transparent { opacity: 1; }</style>
+    <![endif]-->
+  </head>
+
+  <body class="body-red">
+  
+    <!-- Color Options -->
+    <div class="color-options">
+      <div class="option red" data-color="red"></div>
+      <div class="option blue" data-color="blue"></div>
+      <div class="option green" data-color="green"></div>
+      <div class="option asphalt" data-color="asphalt"></div>
+    </div>
+
+    <!-- Landing Image -->  
+    <div class="wrapper" id="home">
+    
+    <!-- Navigation -->
+    <i class="fa fa-bars fa-lg menu-trigger show" id="menu-open"></i>
+    <i class="fa fa-bars fa-lg menu-trigger hidden" id="menu-close"></i>
+    <i class="fa fa-bars fa-lg menu-trigger hidden" id="menu-dummy"></i>
+    <div class="menu" role="navigation">
+      <ul>
+        <li class="hidden"><a href="#home" id="home-link" data-toggle="home-link" data-placement="left" title="Home"><i class="fa fa-home fa-lg"></i></a></li>
+        <li class="hidden delay-1"><a href="#about" id="about-link" data-toggle="about-link" data-placement="left" title="About"><i class="fa fa-user fa-lg"></i></a></li>
+        <li class="hidden delay-2"><a href="#features" id="features-link" data-toggle="features-link" data-placement="left" title="Features"><i class="fa fa-tachometer fa-lg"></i></a></li>
+        <li class="hidden delay-3"><a href="#portfolio" id="portfolio-link" data-toggle="portfolio-link" data-placement="left" title="Portfolio"><i class="fa fa-picture-o fa-lg"></i></a></li>
+        <li class="hidden delay-4"><a href="#team" id="team-link" data-toggle="team-link" data-placement="left" title="Work"><i class="fa fa-share-alt fa-lg"></i></a></li>
+        <li class="hidden delay-5"><a href="#contact" id="contact-link" data-toggle="contact-link" data-placement="left" title="Contact"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+      </ul>
+    </div>
+      
+      <!-- Welcome Message -->
+      <div class="text animated fadeIn">
+        <h2 class="animated bounceIn delay-1">GRAPHIC / WEB DESIGNER</h2>
+        <hr class="animated fadeInUp delay-2">
+        <p class="animated fadeInUp delay-3">Hi, I'm Tri, specializing in front-end
+		development, graphics design and photography</p>
+        <a href="docs/TM-Resume.pdf" target="_blank" class="btn btn-glass animated flipInX delay-4">GRAB MY RESUME</a>
+      </div> <!-- / .text -->
+      
+      <!-- Background -->
+      <div class="wrapper-inner"></div>
+      
+    </div> <!-- / .wrapper -->
+    
+    <div class="container">
+    
+      <div class="margin"></div>
+      
+      <!-- About Us -->
+      <div class="row" id="about">
+        <div class="col-md-4 col-sm-8">
+          <img class="img-responsive block-img fadingIn transparent" src="img/1.jpg" alt="...">
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+        <div class="col-md-4 col-sm-8">
+          <div class="row">
+            <div class="col-md-8 col-sm-8">
+              <div class="block-hf block-sm fadingIn transparent">
+                <h2>Tri Marwanti</h2>
+                <p>
+					This is a personal portfolio and visual playground of me. 
+					Most of the showcased work are develop website, graphics design and photography.
+                </p>
+                <!--<a href="#" class="btn btn-color"><i class="fa fa-info-circle"></i> Learn More...</a>-->
+              </div>
+            </div>
+          </div> <!-- / .row -->
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <img class="img-responsive block-img fadingIn transparent" src="img/8.jpg" alt="...">
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <img class="img-responsive block-img fadingIn transparent" src="img/3.jpg" alt="...">
+            </div>
+          </div> <!-- / .row -->
+        </div>
+      </div> <!-- / .row -->
+      
+      <!-- Main Features -->
+      <div class="row" id="features">
+        <div class="col-md-2 col-sm-4">
+          <img class="img-responsive block-img fadingIn transparent" src="img/4.jpg" alt="...">
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="block block-sm bg-color fadingIn transparent">
+            <h3><i class="fa fa-eye"></i> Fully Responsive</h3>
+            <p>Looks great on all major browsers, tablets and phones.</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="img-responsive block-img fadingIn transparent" src="img/9.jpg" alt="...">
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="block block-sm bg-color fadingIn transparent">
+            
+									
+			<h3><i class="fa fa-leaf"></i> Clean Design</h3>
+            <p>A simple (flat design), clean and attractive. 
+			</p>
+          </div>
+        </div>
+      </div> <!-- / .row-->
+      <div class="row">
+        <div class="col-md-4 col-sm-8">
+          <div class="block block-lg bg-color-dark fadingIn transparent">
+            <h2><i class="fa fa-circle-o"></i> Modern and Eye-catching</h2>
+            <p class="text-justify">
+				Packaging consumer products is one of the most important aspects of marketing. 
+				Eye-catching design packaging should make both a physical and psychological connection. 
+				The packaging identifies the product and reassures consumers that their purchase is the right one. 
+				However, this can only occur when brand owners match the qualities of the product’s packaging 
+				with what consumers desire. 
+				The packaging should never prevent consumers from making a purchase.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-8">
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <img class="img-responsive block-img fadingIn transparent" src="img/5.jpg" alt="...">
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <img class="img-responsive block-img fadingIn transparent" src="img/2.jpg" alt="...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <img class="img-responsive block-img fadingIn transparent" src="img/12.jpg" alt="...">
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <img class="img-responsive block-img fadingIn transparent" src="img/15.jpg" alt="...">
+            </div>
+          </div>
+        </div>
+      </div> <!-- / .row -->
+      
+      <!-- Portfolio -->
+      <div class="row" id="portfolio">
+        <div class="col-md-4 col-sm-8">
+          <div class="row">
+            <div class="col-md-8 col-sm-8">
+              <div class="block-hf block-sm fadingIn transparent">
+                <h2>If you can imagine it, we can create it</h2>
+                <p>
+                  Worked on graphic materials including brochures, banners, catalog, calendar and stationaries.
+                </p>
+                <!--<a href="#" class="btn btn-color"><i class="fa fa-info-circle"></i> Learn More...</a>-->
+              </div>
+            </div>
+          </div> <!-- / .row -->
+          <div class="row">
+            <div class="col-md-8 col-sm-8">
+              <div class="row">
+                <div class="col-md-4 col-sm-4">
+                  <div class="block-hover fadingIn transparent">
+                    <img class="img-responsive block-img" src="img/7.jpg" alt="...">
+                    <a href="img/7.jpg" data-lightbox="lightbox"><div class="plus">+</div></a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="block-hover fadingIn transparent">
+                    <img class="img-responsive block-img" src="img/10.jpg" alt="...">
+                    <a href="img/10.jpg" data-lightbox="lightbox"><div class="plus">+</div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-8">
+          <div class="fadingIn transparent">
+            <!-- Image Carousel -->
+            <div id="example-slideshow" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#example-slideshow" data-slide-to="0" class="active"></li>
+                <li data-target="#example-slideshow" data-slide-to="1"></li>
+                <li data-target="#example-slideshow" data-slide-to="2"></li>
+              </ol>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive block-img" src="img/7.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <img class="img-responsive block-img" src="img/16.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <img class="img-responsive block-img" src="img/17.jpg" alt="...">
+                </div>
+              </div>
+              <!-- Controls -->
+              <a class="carousel-arrow carousel-arrow-prev" href="#example-slideshow" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+              </a>
+              <a class="carousel-arrow carousel-arrow-next" href="#example-slideshow" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / .row -->
+      
+      <!-- Our Team -->
+      <div class="row" id="team">
+        <div class="col-md-2 col-sm-4">
+          <div class="block-hover fadingIn transparent">
+                    <img class="img-responsive block-img" src="img/16.jpg" alt="...">
+                    <a href="img/16.jpg" data-lightbox="lightbox"><div class="plus">+</div></a>
+                  </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="block-hover fadingIn transparent">
+                    <img class="img-responsive block-img" src="img/17.jpg" alt="...">
+                    <a href="img/17.jpg" data-lightbox="lightbox"><div class="plus">+</div></a>
+                  </div>
+        </div>
+        <div class="col-md-4 col-sm-8">
+          <div class="block-hf block-sm bg-color fadingIn transparent">
+            <h2>My Work</h2>
+            <p>
+				  As a web designer, some of my projects are created using code like HTML5, CSS3, Bootstrap, Jquery and PHP.
+				  My primary jobs is styling interface and layout of website. 
+				  But sometimes I also work on programming like connecting a website with a database, etc. 
+            </p>
+          </div>
+        </div>
+      </div> <!-- / .row -->
+      <div class="row">
+        <div class="col-md-2 col-sm-4">
+          <div class="block block-sm bg-color-dark fadingIn transparent">
+            <h4>Indo Claro Sejahtera, PT</h4>
+            <p>Graphic Designer <br>[Jan 2011 - Dec 2014]</p>
+            <!--<a href="#" class="btn btn-glass"><i class="fa fa-clone"></i> Read More</a>-->
+          </div>          
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="img-responsive block-img fadingIn transparent" src="img/13.jpg" alt="...">
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="block block-sm bg-color-dark fadingIn transparent">
+            <h4>Medianet Technology, PT</h4>
+            <p>Web Designer <br>[Oct 2015 - Now]</p>
+            <!--<a href="#" class="btn btn-glass"><i class="fa fa-clone"></i> Read More</a>-->
+          </div>          
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="img-responsive block-img fadingIn transparent" src="img/14.jpg" alt="...">
+        </div>
+      </div> <!-- / .row -->
+      
+      <!-- Contact Us -->
+      <div class="row" id="contact">
+        <div class="col-md-4 col-sm-8">
+          <div class="block block-lg bg-color fadingIn transparent">
+            <h2>Contact Us</h2>
+            <p>Please fill out the form below to send us your message.</p>
+            <form role="form">
+              <div class="row form-group">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <label for="email" class="sr-only">Your email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="E-mail" data-original-title="" title="">
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <label for="name" class="sr-only">Your name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Full Name" data-original-title="" title="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="sr-only">Your message</label>
+                <textarea class="form-control" rows="3" id="message" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-block btn-glass"><i class="fa fa-check"></i> Send It</button>
+            </form>
+            <ul class="list-inline social-links">
+              <li><a href="https://www.instagram.com/iamtrimarwanti" target="_blank" title="@iamtrimarwanti"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://id-id.facebook.com/public/Tri-Marwanti" target="_blank" title="Tri-Marwanti"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/iamtrimarwanti" target="_blank" title="iamtrimarwanti"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://id.linkedin.com/pub/tri-marwanti/74/419/867" target="_blank" title="tri-marwanti"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-8">
+            <div class="block-address fadingIn transparent">
+              <div class="google-maps">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.387162104534!2d106.62874091436046!3d-6.212561762580942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f94d7aa32add%3A0xfd140cd45f2a3f5b!2sJl.+Irmas%2C+Kec.+Tangerang%2C+Kota+Tangerang%2C+Banten+15117!5e0!3m2!1sid!2sid!4v1457342893989" width="500" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+               
+              </div>
+              <div class="mail-address">
+                <p>Jl. Irmas, Kec. Tangerang, Kota Tangerang, Banten 15117, Indonesia</p>
+              </div>
+            </div>
+        </div>
+      </div> <!-- / .row -->
+      <div class="row">
+        <div class="col-md-8 col-sm-8">
+          <p class="text-center">Copyright 2016 - by <a href="index.html">My_Marwa</a> | All Rights Reserved.</p>
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
 
-	<!-- Header -->
-	<div class="container-fluid prx-b" id="header">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="caption">
-					<h1 class="element"></h1>
-					<span>Hello, I'm Tri Marwanti, specializing in graphics design, <br>front-end development and web design.</span>
-					<p class="m-button"><a href="docs/TM-Resume.pdf" class="ghost-button" target="_blank">Grab My Resume</a></p>
-					<div id="mice">
-						<a href="#about" class="page-scroll"><div class="mouse"><div class="wheel"></div></div>
-						<div><span class="unu"></span> <span class="doi"></span></div></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<!-- About Section -->
-	<section id="about">
-		<div class="container-fluid zpb" data-sr="enter top over 1s">
-			<div class="row">
-				<div class="col-sm-12 p-bottom">
-					<p data-sr="enter bottom over 1.6s" class="text-center"><img src="img/profile.png" class="profile" alt="profile"></p>
-					<h1 class="text-center">About Me</h1>
-					<p class="wrap text-center">Hello, I'm Tri, a designer and front-end developer specializing in web and graphics design. I was born in 1992, and graduated from Informatics Management in Bina Sarana Informatika with GPA 3.84 in 2015. I was learned and interested to building graphic design when I was in high schooll. </p>
-				</div>	
-			</div>
-			<div class="row">
-				<div class="col-sm-12" id="work">
-					<h1>Works</h1>
-					<p class="wrap">I've been working in medical device company for more than 3 years as a Graphic Designer. <br>Create brochures, catalog, calendar and stationaries is my job.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!-- Skills Section -->
-	<section id="technical">
-		<div class="container-fluid" data-sr="enter top over 1s">
-			<div class="row">
-				<div class="col-sm-3" data-sr="enter bottom over 0.4s"><h1>Skills</h1></div>
-				<div class="col-sm-2" data-sr="enter bottom over 0.6s"><i class="fa fa-desktop fa-3x"></i><span>Web</span></div>
-				<div class="col-sm-2" data-sr="enter bottom over 0.8s"><i class="fa fa-code fa-3x"></i><span>Code</span></div>
-				<div class="col-sm-2" data-sr="enter bottom over 1s"><i class="fa fa-pencil-square-o fa-3x"></i><span>Graphic</span></div>
-				<div class="col-sm-2" data-sr="enter bottom over 1.2s"><i class="fa fa-share-alt fa-3x"></i><span>Social</span></div>
-			</div>
-		</div>
-	</section>
-	
-	<!-- Portfolio Section -->
-	<section id="portfolio">
-		<div class="container-fluid zp">
-			<div class="row" data-sr="enter top over 1s">
-				<div class="col-sm-6 no-space">
-					<div class="grid">
-						<a href="img/logo-graphics.jpg" class="thumb active" title="image" target="_blank">
-							<img src="img/logo-graphics.jpg" alt="logo-graphics">
-							<div class="text-overlay">
-								<!--<h1 class="text-center">1280x900</h1>-->
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 no-space">
-					<div id="slider">
-						<figure id="scroll">
-							<a href="img/graphic.jpg" title="See My Graphic Design Here !" target="_blank"><img src="img/graphic.jpg" alt="Confessions of A Graphic Designer"></a>
-							<a href="img/brosur2.jpg" title="Pathology Brochure" target="_blank"><img src="img/brosur2.jpg" alt="brosur2"></a>
-							<a href="img/brosur3.jpg" title="Forensic Brochure" target="_blank"><img src="img/brosur3.jpg" alt="brosur3"></a>
-							<a href="img/wedding-card.jpg" title="Wedding Card" target="_blank"><img src="img/wedding-card.jpg" alt="wedding-card"></a>
-							<a href="img/wedding-card2.jpg" title="Wedding Card" target="_blank"><img src="img/wedding-card2.jpg" alt="wedding-card2"></a>
-						</figure>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-sr="enter top over 1s">
-				<div class="col-sm-12 n-mar-tb">
-					<div class="row">
-						<div class="col-sm-8">
-							<div class="row">
-								<div class="col-sm-6 no-space">
-									<div class="grid">
-										<a href="img/mug.jpg" class="thumb active" title="Mug Graphic designed using Photoshop" target="_blank">
-											<img src="img/mug.jpg" alt="Mug">
-											<div class="text-overlay">
-												<!-- <h1 class="text-center">1280x674</h1>-->
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-sm-6 no-space">
-									<div class="grid bgtosca">
-										<div id="caption" data-sr="enter left over 1.6s"><img src="img/sep.gif" alt="separator">
-											<h1>Graphic</h1><span><p>Worked on graphic materials including brochures, banners, catalog, calendar and stationaries.</p></span>
-										</div>
-										<img src="img/spacer.png" alt="spacer" class="img-responsive">
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-12 no-space">
-									<div class="grid">
-										<a href="img/calendar.jpg" class="thumb active" title="Calendar graphic designed using CorelDraw" target="_blank">
-											<img src="img/calendar.jpg" alt="calendar">
-											<div class="text-overlay">
-												<!-- <h1 class="text-center">1280x338</h1>-->
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4 no-space">
-							<div class="grid">
-								<a href="img/graphics.jpg" class="thumb active" title="graphics" target="_blank">
-									<img src="img/graphics.jpg" alt="graphics">
-									<div class="text-overlay">
-										<!-- <h1 class="text-center">638x673</h1>-->
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-sr="enter top over 1s">
-				<div class="col-sm-4 no-space">
-					<div class="grid bgorange">
-						<div id="caption" data-sr="enter left over 1.6s"><img src="img/sep.gif" alt="separator">
-							<h1>Code</h1><span><p>Some of my projects are handcoded with HTML5, CSS3, Bootstrap, Jquery and basic PHP.</p></span>
-						</div>
-						<img src="img/spacer2.png" alt="spacer" class="img-responsive">
-					</div>
-				</div>
-				<div class="col-sm-4 no-space">
-					<div class="grid">
-						<a href="img/adminpanel.jpg" class="thumb active" title="Dashboard Admin using PHP & MySQL" target="_blank">
-							<img src="img/adminpanel.jpg" alt="admin panel">
-							<div class="text-overlay">
-								<!-- <h1 class="text-center">1280x900</h1>-->
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-4 no-space">
-					<div class="grid bggray">
-						<div id="caption" data-sr="enter left over 1.6s"><img src="img/sep.gif" alt="separator">
-							<h1>Web</h1><span><p>Focused on digital marketing (Website, SEO, Social Media, and E-commerce).</p></span>
-						</div>
-						<img src="img/spacer2.png" alt="spacer" class="img-responsive">
-					</div>
-				</div>
-			</div>
-			<div class="row" data-sr="enter top over 1s">
-				<div class="col-sm-6 no-space">
-					<div class="grid">
-						<a href="img/logo-web.jpg" class="thumb active" title="logo web" target="_blank">
-							<img src="img/logo-web.jpg" alt="webdesign">
-							<div class="text-overlay">
-								<!-- <h1 class="text-center">1280x900</h1>-->
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 no-space">
-					<div id="slider">
-						<figure>
-							<a href="img/web-icspt.jpg" title="Homepage PT. Indo Claro Sejahtera Site" data-gallery><img src="img/web-icspt.jpg" alt="web icspt"></a>
-							<a href="img/web-icsstore.jpg" title="Store Page PT. Indo Claro Sejahtera Site" data-gallery><img src="img/web-icsstore.jpg" alt="web icsstore"></a>
-							<a href="img/web-detstore.jpg" title="Detail Product PT. Indo Claro Sejahtera Site" data-gallery><img src="img/web-detstore.jpg" alt="web detstore"></a>
-							<a href="img/web-karisma.jpg" title="Homepage Juragan Wallpaper Site" data-gallery><img src="img/web-karisma.jpg" alt="web karisma"></a>
-							<a href="img/web-karisma2.jpg" title="Catalog Product Juragan Wallpaper Site" data-gallery><img src="img/web-karisma2.jpg" alt="web karisma2"></a>
-						</figure>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-		
-	<!-- Footer -->
-	<div class="container-fluid zp">
-		<div class="row" data-sr="enter top over 1s">
-			<div class="col-sm-12" id="call"><h1 data-sr="enter top over 1s"><span>FEEL FREE TO CONTACT ME !</span><a href="mailto:t.marwanti@gmail.com" class="ghost-button" title="Send Me Email !">Say Hello</a></h1></div>
-		</div>
-		<div class="row zp" id="footer">
-			<div class="col-md-6"><p>2015 &copy; Tri Marwanti || Personal Site</p></div>
-			<div class="col-md-6">
-				<ul class="list-inline social-buttons">
-					<li><a href="https://instagram.com/tri_marwanti" target="_blank" title="Follow Me"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="https://id.linkedin.com/pub/tri-marwanti/74/419/867" target="_blank" title="Follow Me"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://id-id.facebook.com/public/Tri-Marwanti" target="_blank" title="Follow Me"><i class="fa fa-facebook"></i></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12" id="disclaimer"><p class="wrap">THIS IS A PERSONAL ONLINE PORTFOLIO, VISUAL PLAYGROUND AND TESTING GROUND OF TRI MARWANTI. </p></div>
-		</div>
-	</div>
-		
-	<p id="back-top"><a class="page-scroll" href="#header"><span></span></a></p>
-		
-	<!-- Lightbox Gallery -->
-	<div id="blueimp-gallery" class="blueimp-gallery" style="display:none;">
-    	<!-- The container for the modal slides -->
-   		<div class="slides" style="width: 136600px;"></div>
-		<!-- Controls for the borderless lightbox -->
-		<h3 class="title"></h3>
-		<a class="prev">‹</a>
-		<a class="next">›</a>
-		<a class="close">×</a>
-		<a class="play-pause"></a>
-		<ol class="indicator"></ol>
-		<!-- The modal dialog, which will be used to wrap the lightbox content -->
-		<div class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" aria-hidden="true">&times;</button>
-						<h4 class="modal-title"></h4>
-					</div>
-					<div class="modal-body next"></div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-primary pull-left prev">
-							<i class="glyphicon glyphicon-chevron-left"></i>
-							Previous
-						</button>
-						<button type="button" class="btn btn-primary next">
-							Next
-							<i class="glyphicon glyphicon-chevron-right"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<script src="js/jquery.easing-1.3.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-	
-	<script type="text/javascript">
-	$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-	});
-	</script>
-	
-	<script type="text/javascript">
-	$('body').scrollspy({
-		target: '.navbar-fixed-top'
-	});
-	</script>
-	
-	<script type="text/javascript">
-		(function($){
-			'use strict';
-			window.sr= new scrollReveal({
-				reset: false,
-				move: '50px',
-				mobile: false
-			});
-		})();
-	</script>	
-	
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolltopcontrol.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
