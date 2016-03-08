@@ -6053,7 +6053,7 @@ i.menu-trigger#menu0close {
   padding-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
-  background: transparent url(../img/image1-blur.jpg) no-repeat center center;
+  background: transparent url(../img/image1-blur.jpg) no-repeat center left;
 }
 .wrapper-inner {
   position: absolute;
@@ -6061,7 +6061,7 @@ i.menu-trigger#menu0close {
   left: 0;
   height: 100%;
   width: 100%;
-  background: transparent url(../img/image1.jpg) no-repeat center center;
+  background: transparent url(../img/image1.jpg) no-repeat center left;
   z-index: 0;
   -webkit-transition: opacity 300ms;
   -moz-transition: opacity 300ms;
