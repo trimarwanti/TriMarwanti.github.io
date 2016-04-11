@@ -1092,7 +1092,7 @@ pre code {
     margin-left: 25%;
   }
   .col-md-offset-1 {
-    margin-left: 12.5%;
+    margin-left: 16.66666667%;
   }
   .col-md-offset-0 {
     margin-left: 0%;
@@ -5671,7 +5671,7 @@ Last change:    15/04/2014
 /* ===== Colors ===== */
 /* ===== Typography ===== */
 .body-red a {
-  color: #e74c3c;
+  color: #2ecc71;
 }
 .body-red a:hover,
 .body-red a:focus {
@@ -5945,7 +5945,7 @@ i.menu-trigger {
   width: 50px;
   line-height: 50px;
   text-align: center;
-  background: rgba(231, 76, 60, 0.55);
+  background: rgba(0, 0, 0, 0.3);
   color: white;
   cursor: pointer;
   z-index: 9999;
@@ -5961,7 +5961,7 @@ i.menu-trigger {
 i.menu-trigger:hover,
 i.menu-trigger#menu-dummy,
 i.menu-trigger#menu0close {
-  background: rgba(231, 76, 60, 0.9);
+  background: rgba(0, 0, 0, 0.55);
 }
 @media (max-width: 767px) {
   i.menu-trigger {
@@ -6043,17 +6043,29 @@ i.menu-trigger#menu0close {
 .option.asphalt {
   border-left-color: #34495e;
 }
+
 /* ===== Wrapper ===== */
 .wrapper {
   position: relative;
   min-height: 100%;
   height: auto !important;
   /* for older versions of IE */
-  height: 100%;
-  padding-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  background: transparent url(../img/image1-blur.jpg) no-repeat center left;
+  text-align: center;
+  background: url('../img/macbook-juice.jpg') center center no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.icon {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: solid 2px #fff;
+  border-radius: 20px;
+  z-index: 3;
 }
 .wrapper-inner {
   position: absolute;
